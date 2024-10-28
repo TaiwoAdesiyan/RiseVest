@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RiseVest Suite" parallel="false">
+    <test name="LoginFeature Test">
+        <parameter name="browser" value="chrome"/> <!-- I can Change value to "firefox" to run on Firefox alternatively change value to "chrome" to run on Chrome-->
+        <classes>
+            <class name="RiseVest_Test.LoginFeature"/>
+            <class name="RiseVest_Test.WalletBalance"/>
+            <class name="RiseVest_Test.CreatePlanFeature"/>
+        </classes>
+    </test>
+</suite>
